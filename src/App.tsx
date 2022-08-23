@@ -1,7 +1,8 @@
+import { Landing } from "./pages/Landing"
 
 function App() {
   return (
-    <h1>Componente App</h1>
+    <Landing />
   )
 }
 
