@@ -25,29 +25,30 @@
             width: 100%;
             height: 100%;
 
-            .logo-container {
-                @include flex(center, start);
-                flex-direction: row;
+            .logo {
+                @include flex(center, flex-start);
                 width: 100%;
+                height: 100%;
+                margin-right: $minMargin;
 
-                .logo {
+                img {
                     @include flex();
-                    width: max-content;
-                    margin-right: $minMargin;
+                    width: 50%;
+
+                    @include tablet {
+                        width: 80%;
+                    }
+
+                    @include mobile {
+                        width: 100%;
+                    }
                 }
-
-                h1 {
-                    font-size: $fontSizeTitleH2;
-                    font-family: $fontFamilyNunito;
-                    color: $colorWhite;
-                }
-
-
             }
 
             .location-info {
                 @include flex(end);
                 flex-direction: column;
+                height: 100%;
 
                 h3 {
                     font-size: $fontSizeTitleH3;

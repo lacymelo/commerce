@@ -1,0 +1,19 @@
+@use '../styles/abstracts/'as *;
+
+.button {
+    @include flex();
+    width: 100%;
+    height: 6.8rem;
+    background-color: $mainColor;
+    border: 1px solid $backgroundSecondaryColor;
+    color: $colorWhite;
+    border-radius: $borderRadius;
+    cursor: pointer;
+    transform: scale(.98);
+    transition: all ease .32s;
+
+    &:hover {
+        transform: scale(.99);
+        background-color: $colorPrimaryDarker;
+    }
+}

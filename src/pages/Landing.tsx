@@ -1,6 +1,6 @@
 import '../styles/landing.scss'
 import { AiOutlineArrowRight } from 'react-icons/ai'
-import logo from '../assets/map-marker.svg'
+import logo from '../assets/logo.svg'
 import attendance from '../assets/landing.svg'
 import { IconButton } from '../components/IconButton'
 
@@ -13,12 +13,8 @@ function Landing() {
                         <div className="col-12">
                             <div className="row">
                                 <div className="col-6 col-md-6 col-sm-12">
-                                    <div className="logo-container">
-                                        <div className="logo">
-                                            <img src={logo} alt="logo" />
-                                        </div>
-
-                                        <h1>Commerce</h1>
+                                    <div className="logo">
+                                        <img src={logo} alt="logo" />
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-6 col-sm-12">

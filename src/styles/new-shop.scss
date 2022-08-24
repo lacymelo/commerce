@@ -31,117 +31,6 @@
                 margin-bottom: $mobileSpacing;
             }
 
-            .input-block {
-                @include flex(start, space-between);
-                flex-direction: column;
-                width: 100%;
-                position: relative;
-                margin-top: $mobileSpacing;
-
-                label {
-                    font-family: $fontFamilyNunito;
-                    font-size: $fontSizeLabel;
-                    color: $textColor;
-                    margin-bottom: $minMargin;
-                }
-
-                input {
-                    width: 100%;
-                    height: 7rem;
-                    outline: none;
-                    padding: $minPadding;
-                    border-radius: $borderRadius;
-                    border: 1px solid $backgroundSecondaryColor;
-                    background-color: $backgroundMainColor;
-
-                    &[type=file] {
-                        display: none;
-                    }
-                }
-
-                &:focus-within::after {
-                    width: calc(100% - 5.3rem);
-                    content: '';
-                    position: absolute;
-                    background-color: $mainColor;
-                    height: 1.1px;
-                    bottom: 0.1rem;
-                    left: 2.5rem;
-                    border-bottom-right-radius: 200px;
-                    border-bottom-left-radius: 200px;
-                }
-
-                .uploaded-image {
-                    @include flex();
-                    width: 100%;
-
-                }
-
-                .upload-content {
-                    @include flex();
-                    width: 100%;
-                    height: 100%;
-
-                    .box-image {
-                        @include flex();
-                        flex-direction: row;
-                        position: relative;
-                        width: 100%;
-                        height: 80pt;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            border-radius: $borderRadius;
-                        }
-
-                        .close {
-                            @include flex();
-                            position: absolute;
-                            top: 7px;
-                            right: 7px;
-                            color: $colorWhite;
-                            background: $mainColor;
-                            border-radius: $borderRadius;
-                            border: 1px solid $mainColor;
-                            padding: 5px;
-                            cursor: pointer;
-                        }
-                    }
-
-                    .btn {
-                        @include flex();
-                        width: 100%;
-                        height: 100%;
-
-                        .new-image {
-                            @include flex();
-                            margin-bottom: 0;
-                            width: 100%;
-                            height: 80pt;
-                            background: $backgroundMainColor;
-                            border: 1px dashed $border;
-                            border-radius: $borderRadius;
-                            cursor: pointer;
-
-                            .icon {
-                                color: $mainColor
-                            }
-                        }
-                    }
-
-                    .button-container {
-                        @include flex();
-                        flex-direction: row;
-                        width: 100%;
-                        height: 100%;
-                    }
-
-                }
-
-
-            }
-
             .grid-block-buttons {
                 width: 100%;
                 position: relative;
@@ -232,21 +121,71 @@
         }
     }
 
-    .button {
+    .uploaded-image {
         @include flex();
         width: 100%;
-        height: 6.8rem;
-        background-color: $mainColor;
-        border: 1px solid $backgroundSecondaryColor;
-        color: $colorWhite;
-        border-radius: $borderRadius;
-        cursor: pointer;
-        transform: scale(.98);
-        transition: all ease .32s;
 
-        &:hover {
-            transform: scale(.99);
-            background-color: $colorPrimaryDarker;
+    }
+
+    .upload-content {
+        @include flex();
+        width: 100%;
+        height: 100%;
+
+        .box-image {
+            @include flex();
+            flex-direction: row;
+            position: relative;
+            width: 100%;
+            height: 80pt;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: $borderRadius;
+            }
+
+            .close {
+                @include flex();
+                position: absolute;
+                top: 7px;
+                right: 7px;
+                color: $colorWhite;
+                background: $mainColor;
+                border-radius: $borderRadius;
+                border: 1px solid $mainColor;
+                padding: 5px;
+                cursor: pointer;
+            }
         }
+
+        .btn {
+            @include flex();
+            width: 100%;
+            height: 100%;
+
+            .new-image {
+                @include flex();
+                margin-bottom: 0;
+                width: 100%;
+                height: 80pt;
+                background: $backgroundMainColor;
+                border: 1px dashed $border;
+                border-radius: $borderRadius;
+                cursor: pointer;
+
+                .icon {
+                    color: $mainColor
+                }
+            }
+        }
+
+        .button-container {
+            @include flex();
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
     }
 }

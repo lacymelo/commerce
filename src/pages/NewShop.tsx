@@ -5,6 +5,8 @@ import { MapContainer, TileLayer } from 'react-leaflet'
 import { Markers } from '../components/Markers'
 import { Header } from '../components/Header'
 import { Container } from '../components/Container'
+import { Input } from '../components/Input'
+import { Button } from '../components/Button'
 
 function NewShop() {
     const [name, setName] = useState('')
@@ -127,16 +129,13 @@ function NewShop() {
                                             )
                                         }
 
-                                        <div className="input-block">
-                                            <label htmlFor="name">Nome</label>
-
-                                            <input
-                                                type="text"
-                                                id='name'
-                                                value={name}
-                                                onChange={(event) => setName(event.target.value)}
-                                            />
-                                        </div>
+                                        <Input
+                                            type="text"
+                                            label="Nome"
+                                            id='name'
+                                            value={name}
+                                            onChange={(event) => setName(event.target.value)}
+                                        />
 
                                         <div className="textarea-block">
                                             <label htmlFor="about">
@@ -191,16 +190,14 @@ function NewShop() {
                                 <div className="col-12">
                                     <fieldset>
                                         <legend>Horário Comercial</legend>
-                                        <div className="input-block">
-                                            <label htmlFor="name"></label>
 
-                                            <input
-                                                type="text"
-                                                id='opening_hours'
-                                                value={openingHours}
-                                                onChange={(event) => setOpeningHours(event.target.value)}
-                                            />
-                                        </div>
+                                        <Input
+                                            type="text"
+                                            label="Horário de Funciomaneto"
+                                            id='opening_hours'
+                                            value={openingHours}
+                                            onChange={(event) => setOpeningHours(event.target.value)}
+                                        />
 
                                         <div className="grid-block-buttons">
                                             <label htmlFor="open_on_weekends">Atende fim de semana</label>
@@ -226,12 +223,15 @@ function NewShop() {
                                     </fieldset>
                                 </div>
                             </div>
+
                             <div className="row">
                                 <div className="col-12">
                                     <fieldset>
-                                        <button type='submit' className="button">
-                                            Salvar
-                                        </button>
+                                        <Button
+                                            type='submit'
+                                            className='button'
+                                            name='Salvar'
+                                        />
                                     </fieldset>
                                 </div>
                             </div>
