@@ -1,0 +1,35 @@
+@use "../styles/abstracts/"as *;
+
+#shops-map {
+    @include flex();
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    .map-popup {
+        width: min-content;
+        color: $mainColor;
+        font-size: $fontSizeNormal;
+        top: -160px;
+
+        .leaflet-popup-content-wrapper {
+
+            .leaflet-popup-content {
+                @include flex(center, space-between);
+                flex-direction: row;
+                width: 100%;
+
+                span {
+                    color: $mainColor;
+                }
+
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+
+        }
+    }
+}

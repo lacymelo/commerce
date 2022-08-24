@@ -1,8 +1,8 @@
 import '../styles/landing.scss'
+import { AiOutlineArrowRight } from 'react-icons/ai'
 import logo from '../assets/map-marker.svg'
 import attendance from '../assets/landing.svg'
-import { Link } from 'react-router-dom'
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import { IconButton } from '../components/IconButton'
 
 function Landing() {
     return (
@@ -10,37 +10,54 @@ function Landing() {
             <section className="landing">
                 <div className="container">
                     <header className="landing-header">
-                        <div className="logo-container">
-                            <div className="logo">
-                                <img src={logo} alt="logo" />
+                        <div className="col-12">
+                            <div className="row">
+                                <div className="col-6 col-md-6 col-sm-12">
+                                    <div className="logo-container">
+                                        <div className="logo">
+                                            <img src={logo} alt="logo" />
+                                        </div>
+
+                                        <h1>Commerce</h1>
+                                    </div>
+                                </div>
+                                <div className="col-6 col-md-6 col-sm-12">
+                                    <div className="location-info">
+                                        <h3 className="city">
+                                            Cametá
+                                        </h3>
+
+                                        <p className="uf">PA</p>
+                                    </div>
+                                </div>
                             </div>
-
-                            <h1>Commerce</h1>
-                        </div>
-
-                        <div className="location-info">
-                            <h3 className="city">
-                                Cametá
-                            </h3>
-
-                            <p className="uf">PA</p>
                         </div>
                     </header>
 
                     <div className="banner">
-                        <div className="left">
-                            <h1>Encontre suas lojas favoritas</h1>
-                            <p>Contribua com o cadastro de lojas da sua região </p>
-                        </div>
+                        <div className="col-12">
+                            <div className="row">
+                                <div className="col-6 col-md-6 col-sm-12">
+                                    <div className="left">
+                                        <h1>Encontre suas lojas favoritas</h1>
+                                        <p>Contribua com o cadastro de lojas da sua região </p>
+                                    </div>
+                                </div>
+                                <div className="col-6 col-md-6 col-sm-12">
+                                    <div className="right">
+                                        <div className="image-container">
+                                            <img src={attendance} alt="imagem-banner" />
+                                        </div>
 
-                        <div className="right">
-                            <div className="image-container">
-                                <img src={attendance} alt="imagem-banner" />
+                                        <IconButton
+                                            className='button-link'
+                                            path='/shops-map'
+                                            title='Entrar'
+                                            icon={<AiOutlineArrowRight className='icon' />}
+                                        />
+                                    </div>
+                                </div>
                             </div>
-
-                            <Link to="/" title='Entrar'>
-                                <AiOutlineArrowRight className='icon' />
-                            </Link>
                         </div>
                     </div>
                 </div>

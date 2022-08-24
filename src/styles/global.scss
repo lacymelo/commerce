@@ -1,0 +1,38 @@
+@use "../styles/abstracts/"as *;
+
+:root {
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $textTitleColor;
+    background-color: $backgroundMainColor;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body,
+input,
+textarea,
+button {
+    font: 600 1.8rem $fontFamilyNunito;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.mb {
+    margin-bottom: $spacing;
+
+    @include tablet {
+        margin-bottom: $mobileSpacing;
+    }
+}

@@ -1,8 +1,8 @@
-import { Landing } from "./pages/Landing"
+import { WebRoutes } from "./routes"
 
 function App() {
   return (
-    <Landing />
+    <WebRoutes />
   )
 }
 

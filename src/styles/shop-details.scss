@@ -1,0 +1,185 @@
+@use '../styles/abstracts/'as *;
+
+.shop-details {
+    @include flex();
+    width: 100%;
+
+    .details {
+        @include flex(stretch, center);
+        flex-direction: column;
+        width: 100%;
+        max-width: $mobile-width;
+        background-color: $colorWhite;
+        border: 1px solid $border;
+        border-radius: $borderRadius;
+
+        img {
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 1.6rem;
+            margin: 1.6rem 4rem 0;
+
+            button {
+                border: 0;
+                height: 8.8rem;
+                background: none;
+                cursor: pointer;
+                border-radius: 2rem;
+                overflow: hidden;
+                outline: none;
+                opacity: 0.6;
+                border: 1px solid $backgroundSecondaryColor;
+
+                &.active {
+                    opacity: 1;
+                }
+
+                img {
+                    width: 100%;
+                    height: 8.8rem;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .details-content {
+            padding: $fontSizeLarge;
+
+            h1 {
+                color: $mainColor;
+                font-size: $fontSizeTitleH1;
+                line-height: 5.4rem;
+                margin-bottom: 0.8rem;
+            }
+
+            p {
+                line-height: 2.8rem;
+                color: $mainColor;
+                margin-top: 2.4rem;
+            }
+
+            .map-container {
+                margin-top: 4rem;
+                background: $backgroundMainColor;
+                border: 1px solid $border;
+                border-radius: 2rem;
+
+                footer {
+                    padding: 2rem 0;
+                    text-align: center;
+
+                    a {
+                        line-height: 2.4rem;
+                        color: $mainColor;
+                        text-decoration: none;
+                    }
+                }
+
+                .leaflet-container {
+                    border-bottom: 1px solid $border;
+                    border-radius: 2rem;
+                }
+
+                hr {
+                    width: 100%;
+                    height: 0.1rem;
+                    border: 0;
+                    background: $border;
+                    margin: 6.4rem 0;
+                }
+            }
+
+            h2 {
+                font-size: 3.6rem;
+                line-height: 4.6rem;
+                color: $mainColor;
+                margin-top: 3rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .open-details {
+                margin-top: 2.4rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+
+                div {
+                    padding: 3.2rem 2.4rem;
+                    border-radius: $borderRadius;
+                    line-height: 2.8rem;
+
+                }
+
+                .hour {
+                    @include flex();
+                    width: 100%;
+                    background: linear-gradient(149.97deg, $colorWhite 8.13%, $border 92.67%);
+                    border: 1px solid $border;
+                    color: $mainColor;
+
+                    @include mobile {
+                        margin-bottom: $minMargin;
+                    }
+                }
+
+                .open-on-weekends {
+                    @include flex();
+                    width: 100%;
+                    background: linear-gradient(154.16deg, $backgroundSecondaryColor 7.85%, #FFFFFF 91.03%);
+                    border: 1px solid $border;
+                    color: $mainColor;
+
+
+                    .dont-open {
+                        background: $colorSecondaryDarker;
+                        border: 1px solid $border;
+                        color: $colorSecondaryDark;
+                    }
+                }
+
+                .dont-open {
+                    background: $colorSecondaryDarker;
+                    border: 1px solid $colorSecondaryDark;
+                    color: $colorWhite;
+                }
+
+                @include mobile {
+                    @include flex();
+                    flex-direction: column;
+                }
+            }
+
+            .button-container {
+                margin-top: $fontSizeLarge;
+
+                .button {
+                    @include flex();
+                    width: 100%;
+                    height: 6.8rem;
+                    background-color: $mainColor;
+                    border: 1px solid $backgroundSecondaryColor;
+                    color: $colorWhite;
+                    border-radius: $borderRadius;
+                    cursor: pointer;
+                    transform: scale(.98);
+                    transition: all ease .32s;
+
+                    &:hover {
+                        transform: scale(.99);
+                        background-color: $colorPrimaryDarker;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+}

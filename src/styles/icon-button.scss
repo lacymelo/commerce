@@ -1,0 +1,46 @@
+@use '../styles/abstracts/'as *;
+
+.button-link {
+    @include flex();
+    background-color: $colorSecondaryDark;
+    width: 7rem;
+    height: 7rem;
+    border-radius: $borderRadius;
+    transform: scale(.95);
+    transition: all ease .32s;
+
+    .icon {
+        font-size: $fontSizeMedium;
+        color: $colorPrimaryDarker;
+    }
+
+    &:hover {
+        transform: scale(1);
+        background-color: $colorSecondaryDarker;
+    }
+}
+
+.button-create {
+    @include flex();
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    bottom: $spacing;
+    right: $spacing;
+    background-color: $colorSecondaryDark;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    transform: scale(.95);
+    transition: all ease .32s;
+    z-index: 9999;
+
+    .icon {
+        font-size: $fontSizeMedium;
+        color: $mainColor;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: $colorSecondaryDarker;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../styles/abstracts/'as *;
+
+.sidebar-container {
+    @include flex();
+    flex-direction: row;
+    position: sticky;
+    width: $sizeBarHeight;
+    background-color: $mainColor;
+    z-index: 9999;
+
+    .sidebar {
+        @include flex(center, space-between);
+        flex-direction: column;
+        width: $sizeBarHeight;
+        padding: $spacing 0 $spacing;
+        height: 100vh;
+
+        .logo-sidebar {
+            @include flex();
+        }
+    }
+}

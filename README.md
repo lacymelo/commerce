@@ -13,7 +13,8 @@ Desenvolvimento de uma aplicação frontend com ReactJS, para o cadastro de pont
 -  [axios](https://github.com/axios/axios)
 -  [ReactRouterDom](https://www.npmjs.com/package/react-router-dom)
 -  [ReactIcons](https://www.npmjs.com/package/react-icons)
--  [ReactDropzone](https://react-dropzone.js.org/)
+-  [ReactLeaflet](https://react-leaflet.js.org/)
+-  [GoogleFonts](https://fonts.google.com/)
 
 ## 🔖 Configurações do Layout WEB
 
@@ -54,7 +55,7 @@ Desenvolvimento de uma aplicação frontend com ReactJS, para o cadastro de pont
 
 
 # entrar na pasta city-commerce
-cd city-commerce
+cd commerce
 
 # instalação das dependências
 yarn install
