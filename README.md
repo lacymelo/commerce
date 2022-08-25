@@ -28,8 +28,8 @@ Desenvolvimento de uma aplicação frontend com ReactJS, para o cadastro de pont
 </h3>
 
 <p align="center">
-  <img alt="login" src="src/assets/new-shop-1.PNG" width="100%">
-  <img alt="login" src="src/assets/new-shop-2.PNG" width="100%">
+  <img alt="login" src="src/assets/new-shop-1.PNG" width="90%">
+  <img alt="login" src="src/assets/new-shop-2.PNG" width="90%">
 </p>
 
 <h3 align="center">
@@ -37,9 +37,9 @@ Desenvolvimento de uma aplicação frontend com ReactJS, para o cadastro de pont
 </h3>
 
 <p align="center">
-  <img alt="login" src="src/assets/details-1.PNG" width="100%">
-  <img alt="login" src="src/assets/details-2.PNG" width="100%">
-  <img alt="login" src="src/assets/details-3.PNG" width="100%">
+  <img alt="login" src="src/assets/details-1.PNG" width="90%">
+  <img alt="login" src="src/assets/details-2.PNG" width="90%">
+  <img alt="login" src="src/assets/details-3.PNG" width="90%">
 </p>
 
 ## :rocket: Tecnologias Utilizadas
