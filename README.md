@@ -10,7 +10,7 @@ Desenvolvimento de uma aplicação frontend com ReactJS, para o cadastro de pont
 </h3>
 
 <p align="center">
-  <img alt="login" src="src/assets/landing.png" width="65%">
+  <img alt="login" src="src/assets/landing.PNG" width="65%">
   <img alt="login" src="src/assets/mobile-landing.PNG" width="25%">
 </p>
 
