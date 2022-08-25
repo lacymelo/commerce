@@ -13,14 +13,12 @@
         background-color: $colorWhite;
         border-radius: $borderRadius;
         border: 1px solid $border;
-        max-width: $tablet-width;
 
         fieldset {
             @include flex();
             flex-direction: column;
             margin: $mobileSpacing;
             border: none;
-            width: $mobile-width;
 
             legend {
                 font-family: $fontFamilyNunito;

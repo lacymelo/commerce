@@ -99,7 +99,7 @@ function NewShop() {
                 />
 
                 <Container>
-                    <div className="col-12 col-md-12">
+                    <div className="col-12">
                         <form onSubmit={handleSubmit} className='form'>
                             <div className="row">
                                 <div className="col-12">

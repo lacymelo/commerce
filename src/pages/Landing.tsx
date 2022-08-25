@@ -1,7 +1,7 @@
 import '../styles/landing.scss'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import logo from '../assets/logo.svg'
-import attendance from '../assets/landing.svg'
+import attendance from '../assets/search-map.png'
 import { IconButton } from '../components/IconButton'
 
 function Landing() {

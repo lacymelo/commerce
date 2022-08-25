@@ -2,32 +2,46 @@
 
 .shop-details {
     @include flex();
+    flex-direction: column;
+    position: relative;
     width: 100%;
 
     .details {
-        @include flex(stretch, center);
+        @include flex();
         flex-direction: column;
         width: 100%;
-        max-width: $mobile-width;
+        height: 100%;
         background-color: $colorWhite;
         border: 1px solid $border;
         border-radius: $borderRadius;
 
-        img {
+        .image-container {
+            @include flex();
+            flex-direction: row;
             width: 100%;
-            height: 30rem;
-            object-fit: cover;
+            height: 300px;
+            border-top-right-radius: $borderRadius;
+            border-top-left-radius: $borderRadius;
+            background-color: $backgroundSecondaryColor;
+
+            img {
+                @include flex();
+                width: 100%;
+                height: 100%;
+                padding: $minPadding;
+                border-radius: $borderRadius;
+            }
         }
 
         .images {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            column-gap: 1.6rem;
-            margin: 1.6rem 4rem 0;
+            @include flex();
+            width: 100%;
+            margin-top: $minMargin;
 
             button {
+                width: 100%;
                 border: 0;
-                height: 8.8rem;
+                height: 100%;
                 background: none;
                 cursor: pointer;
                 border-radius: 2rem;
@@ -42,7 +56,7 @@
 
                 img {
                     width: 100%;
-                    height: 8.8rem;
+                    height: 100%;
                     object-fit: cover;
                 }
             }
@@ -51,9 +65,9 @@
         .details-content {
             padding: $fontSizeLarge;
 
-            h1 {
+            h2 {
                 color: $mainColor;
-                font-size: $fontSizeTitleH1;
+                font-size: $fontSizeTitleH2;
                 line-height: 5.4rem;
                 margin-bottom: 0.8rem;
             }
@@ -85,14 +99,6 @@
                     border-bottom: 1px solid $border;
                     border-radius: 2rem;
                 }
-
-                hr {
-                    width: 100%;
-                    height: 0.1rem;
-                    border: 0;
-                    background: $border;
-                    margin: 6.4rem 0;
-                }
             }
 
             h2 {
@@ -109,44 +115,69 @@
                 grid-template-columns: 1fr 1fr;
                 column-gap: 2rem;
 
-                div {
-                    padding: 3.2rem 2.4rem;
-                    border-radius: $borderRadius;
-                    line-height: 2.8rem;
-
-                }
-
                 .hour {
-                    @include flex();
+                    @include flex(center, space-between);
+                    flex-direction: row;
                     width: 100%;
-                    background: linear-gradient(149.97deg, $colorWhite 8.13%, $border 92.67%);
+                    background: $backgroundSecondaryColor;
                     border: 1px solid $border;
                     color: $mainColor;
+                    height: 14rem;
+                    padding: $minPadding;
+                    border-radius: $borderRadius;
+
+                    .icon {
+                        margin-right: $minMargin;
+                        font-size: $fontSizeMedium;
+                    }
+
+                    .info {
+                        font-size: $fontSizeNormal;
+                        justify-content: space-around;
+                    }
+
 
                     @include mobile {
+                        margin-bottom: $minMargin;
+                    }
+
+                    @include tablet {
+                        @include flex(center, start);
+                        flex-direction: row;
                         margin-bottom: $minMargin;
                     }
                 }
 
                 .open-on-weekends {
-                    @include flex();
+                    @include flex(center, space-between);
                     width: 100%;
-                    background: linear-gradient(154.16deg, $backgroundSecondaryColor 7.85%, #FFFFFF 91.03%);
-                    border: 1px solid $border;
+                    height: 14rem;
+                    background: $backgroundSecondaryColor;
                     color: $mainColor;
+                    border-radius: $borderRadius;
+                    padding: $minPadding;
 
-
-                    .dont-open {
-                        background: $colorSecondaryDarker;
-                        border: 1px solid $border;
-                        color: $colorSecondaryDark;
+                    .icon {
+                        margin-right: $minMargin;
+                        font-size: $fontSizeMedium;
                     }
-                }
 
-                .dont-open {
-                    background: $colorSecondaryDarker;
-                    border: 1px solid $colorSecondaryDark;
-                    color: $colorWhite;
+
+                    .info {
+                        font-size: $fontSizeNormal;
+                        justify-content: space-around;
+                    }
+
+                    &.dot-open {
+                        background: $colorSecondaryDarker;
+                        color: $colorWhite;
+                    }
+
+                    @include tablet {
+                        @include flex(center, start);
+                        flex-direction: row;
+                        margin-bottom: $minMargin;
+                    }
                 }
 
                 @include mobile {
@@ -157,28 +188,7 @@
 
             .button-container {
                 margin-top: $fontSizeLarge;
-
-                .button {
-                    @include flex();
-                    width: 100%;
-                    height: 6.8rem;
-                    background-color: $mainColor;
-                    border: 1px solid $backgroundSecondaryColor;
-                    color: $colorWhite;
-                    border-radius: $borderRadius;
-                    cursor: pointer;
-                    transform: scale(.98);
-                    transition: all ease .32s;
-
-                    &:hover {
-                        transform: scale(.99);
-                        background-color: $colorPrimaryDarker;
-                    }
-                }
             }
-
-
-
         }
     }
 

@@ -5,6 +5,43 @@
 
 Desenvolvimento de uma aplicação frontend com ReactJS, para o cadastro de pontos comerciais do Baixo-Tocantins, todo o layout é responsivo para tablet e smartphone. Iremos utilizar Typescript, SCSS, axios, ReactRouterDom e ReactIcons.
 
+<h3 align="center">
+  Landing Page
+</h3>
+
+<p align="center">
+  <img alt="login" src="src/assets/landing.png" width="65%">
+  <img alt="login" src="src/assets/mobile-landing.PNG" width="25%">
+</p>
+
+<h3 align="center">
+  Shops Map
+</h3>
+
+<p align="center">
+  <img alt="login" src="src/assets/shops-map.PNG" width="65%">
+  <img alt="login" src="src/assets/mobile-shops-map.PNG" width="25%">
+</p>
+
+<h3 align="center">
+  New Shop
+</h3>
+
+<p align="center">
+  <img alt="login" src="src/assets/new-shop-1.PNG" width="100%">
+  <img alt="login" src="src/assets/new-shop-2.PNG" width="100%">
+</p>
+
+<h3 align="center">
+  Details
+</h3>
+
+<p align="center">
+  <img alt="login" src="src/assets/details-1.PNG" width="100%">
+  <img alt="login" src="src/assets/details-2.PNG" width="100%">
+  <img alt="login" src="src/assets/details-3.PNG" width="100%">
+</p>
+
 ## :rocket: Tecnologias Utilizadas
 ---
 
